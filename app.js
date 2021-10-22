@@ -9,7 +9,7 @@ app.listen (port,() => {
     console.log ("App Corriendo")
 });
 
-app.get ("/home",(req,res) => {
+app.get ("/",(req,res) => {
     res.sendFile(path.join(__dirname,"/views/home.html"))
 });
 app.get ("/misCompras.html", (req,res) => {
