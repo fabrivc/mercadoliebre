@@ -1,212 +1,445 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
- background-color: #ebebeb;
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.top-header{
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.main-header-top-bar{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
-    text-align: center;
-    margin-left: 10px;
 }
-.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-    position: fixed;
-  
+
+.contenedor{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
 }
-header{
-    background-color: #EAC926;
-    padding: 0 0 5px 0;
-}
+
 .logo{
-width: 50%;
-padding: 1%;
-margin-left: 10px;
+    display: inline-block;
+    width: 150px;
+    margin-left: 0px;
 }
-.banner img{
+
+
+
+.barra-busqueda {  
+    display: inline;
+    font-size: 20px;
+    margin: 5px;
     width: 100%;
-}
-header nav{
-    font-size: 12px;
-}
-main section article i{
-    
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 115px;
-
-}
-header ul li{
-    list-style-type: none;
-    padding: 5px;
-    font-size: 2vw;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-.busqueda .barradebusqueda{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-    width: 50%;
-    padding: 2%;
-    text-align: left;
-    margin-left: 10px;
-
-}
-.busqueda .lupa{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 20px;
-    margin-top: 1px;
-    margin-left: 10px;
-
-}
-
-.burger-menu{
     text-align: center;
 }
 
-.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 33px;
-    margin: 10px 0px 10px 0px;
-    padding: 7px;
-    width: 40px;
-   cursor: pointer;
+.search {
+    font-size: 100%;
+    height: 100%;
+    border: 1px solid black;
+    color: gray;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10%;
 }
-.main-article{
-    width: 100%;
+
+
+.copia-header{
+    font-weight: 400;
+    text-align: center;
+    height: 50%;
+    font-weight: 600;
 }
-.precio{
+
+.hamburguer-button{
+    display: block;
+    background-color: #03264C;
+    color:#ffffff;
+    text-align: center;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    margin:auto;   
     font-size: 18px;
 }
-.descuento,
-.descripcion{
-    font-size: 16px;
-}
 
-
-.descripcion{
-    color: #666;
-}
-main section article{
-background-color: #FFF;
-
-}
-
-main section article img{
-    width: 100%;
-}
-
-main section article i,
-.descuento{
-    color: #39b54a;
-    
-}
-main .main-article{
-    border:1px solid #ebebeb;
-}
-
-main {
-    background-color: #ebebeb;
-    width: 90%;
-
-}
-main article{
-    margin-top: 10%;
-margin-left: 45px;
-justify-content: center;
-
-}
-main .productos {
-    margin-left: 50px;
-    
-}
-
-main section .productos-en-oferta {
-    margin: 30px;
-  margin-bottom: 10px;
-}
-main .ofertas{
-    margin-left: 5%;
-   margin-top:30px;
-   font-size: 24px;
-}
-main section .ultima-visita h3{
-    font-size: 24px;
-}
-main section .ofertas{
-    font-size: 24px;
-}
-footer .pie-de-pagina i{
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color:#1259c3;
-}
-footer .textos-pie-de-pagina{
-    text-align: center;
-}
-.ultima-visita{
- margin-right: 55px;
-}
-.botones-header,.botones-header2{
-    display: flex;
-}
-.botones-header2{
-    justify-content: right;
-}
-.botones-header{
-    display: flex;
-    justify-content: left;
-}
-
-@media (max-width:425px){
-header .top-header .container-botones,.descripcion{
+.main-header-bottom-bar{
     display: none;
 }
-.compra{
+
+.main-header-bottom-bar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header-bottom-bar a {
+text-decoration: none;
+color: #222222;
+display: inline-block;
+padding: 5px 0;
+font-size: 18px;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.right-nav {
+    margin-right: 0;
+}
+
+
+.titulares {
+    margin-left: 10px;
+    color:#666;
+}
+
+li {
+    font-size: 50%;
+    color: #000000;
+    text-decoration: none;
+}
+
+i{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+article {
+font-size: medium;
+display: inline;
+text-align: center;
+line-height: 100%;
+margin: 30px 10px;
+width: 90%;
+background-color: rgb(255, 255, 255);
+border-radius: 2%;
+background-position: center;
+}
+
+.detalle_articulo {
+display: inline-block;
+width: 100%;
+text-align: center;
+border-top: 1px solid #ebebeb;
+padding: 15px;
+}
+
+.imagen {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin: auto;
+        background-size: cover;
+
+    }
+
+    main section article i{
+        display: block;
+        font-size: 16px;
+        color: #39b54a;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        position: relative;
+        left: 50px;
+        bottom: 15px;
+        border-radius: 50%;
+    }
+
+.card:hover i {
+    transform: rotate(270deg);
+}
+
+.precio-oferta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price {
+    margin-right: 15px;
+    width: 30%;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.off {
+    margin-left: 0px;
+    width: 70%;
+    text-align: left;
+    color: rgb(8, 143, 8);
+    font-size: 16px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+.nombre-producto {
+    display: none;
+    text-align: left;
+    font-size: 18px;
+    color: rgb(153, 149, 149);
+    transition: display 450ms;
+}
+
+.nombre-producto:hover {
+    display: flex;
+}
+
+.description {
+        display: none;
+        text-align: left;
+        font-size: 18px;
+        color: rgb(153, 149, 149);
+}
+
+.card:hover .description {
+    display:block;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    background-color: rgb(231, 223, 223);    
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     text-align: center;
+    width: 100%;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(231, 223, 223);    
+    margin-left: 0px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+.icono-footer {
+    color:blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.formulario form {
+    text-align: center;
+    margin: 2px
+}
+
+.formulario h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+button {
+    padding:10px;
+    margin-top: 10px;
+    color: black;
+    border-radius: 15%;
+    transition: all 450ms;
+}
+
+button:hover {
+    background-color: #0022AA;
+    color: white;
+}
+
+input {
+    text-align: center;
+    border: 1px black solid;
+    align-content: center;
+    margin: 0;
+}
 
 
-@media (min-width:426px){
-    .main-article,.imagen{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        
+@media (min-width: 768px) {
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-    .compra{
+    
+    .copia-header {
+        max-width: 370px;
         text-align: center;
+        font-weight: 600;
     }
-    .burger-menu{
-        display: none;}
+
+    .logo{
+        width: 300px
     }
+
+    .slogan {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .barra-busqueda {  
+        margin-left: 30px;
+        margin-right: 10px;
+        width: 70%;
+        padding: 10px;
+    }
+    
+    .search {
+        display: inline-block;
+        text-align: center;
+        align-self: center;
+        font-size: 100%;
+        height: 100%;
+        border: 1px solid black;
+        color: gray;
+        background-color: white;
+        padding: 3px 5px;
+        border-radius: 10%;
+    }
+
+    .hamburguer-button {
+        display:none;
+    }
+
+    .main-header-bottom-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-bottom-bar ul {
+        display: flex;
+    }
+
+    .main-header-bottom-bar li {
+        margin: 0 5px;
+    }
+
+    .titulares {
+        text-align: left;
+        font-size: 24px;
+        margin:15px;
+        font-weight: 500;
+        font-size: 24px;
+        color: #666
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    article {
+        margin: 30px 10px;
+        display: flex;
+        width: 45%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: all 1000ms
+
+    }
+
+    article:hover {
+    box-shadow: 6px 6px 4px rgb(131, 126, 126);;
     }
 }
+
+@media (min-width:1200px){
+    .main-header-bottom-bar {
+        max-width: 1200px;
+        margin-top: 40px;
+        margin-bottom: 00px;
+    }
+
+    .logo {
+        width:250px;
+    }
+
+    .copia-header {
+        max-width: none;
+        height: 50%;
+        font-size: 24px;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    .barra-busqueda {  
+        margin-left: 30px;
+        width: 70%;
+    }
+    
+    .search {
+        display: inline-block;
+        text-align: center;
+        font-size: 100%;
+        height: auto;
+        border: 1px solid black;
+        color: gray;
+        background-color: white;
+        padding: 5px;
+        border-radius: 10%;
+    }
+
+    .main-header-bottom-bar li {
+        margin: 20px 10px;
+    }
+
+    .main-header-bottom-bar a {
+        font-size: 18px;
+    }
+
+    .titulares {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 500;
+        margin:15px;
+        color: #666;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    article {
+            margin: 30px 10px;
+            display: flex;
+            width: 20%;
+            flex-wrap: wrap;
+        }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+}
+
