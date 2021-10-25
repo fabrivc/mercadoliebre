@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    margin:0;
 }
 
 body {
@@ -48,11 +48,7 @@ body {
     border: 1px solid black;
     color: gray;
     background-color: white;
-    padding: 5px;
-    
 }
-
-
 .copia-header{
     font-weight: 400;
     text-align: center;
@@ -75,7 +71,6 @@ body {
 .main-header-bottom-bar{
     display: none;
 }
-
 .main-header-bottom-bar ul{
     list-style: none;
     padding: 0;
@@ -157,8 +152,8 @@ padding: 15px;
         border: 1px solid #39b54a;
         background-color: #FFF;
         position: relative;
-        left: 50px;
-        bottom: 15px;
+        left: 90px;
+        bottom: 30px;
         border-radius: 50%;
     }
 
@@ -275,6 +270,9 @@ input {
     align-content: center;
     margin: 0;
 }
+.icono-footer:hover{
+    color: yellow;
+}
 
 
 @media (min-width: 768px) {
@@ -307,7 +305,7 @@ input {
 
     .barra-busqueda {  
         margin-left: 30px;
-        margin-right: 10px;
+        
         width: 70%;
         padding: 10px;
     }
@@ -321,8 +319,8 @@ input {
         border: 1px solid black;
         color: gray;
         background-color: white;
-        padding: 3px 5px;
-        border-radius: 10%;
+        padding: 6.5px;
+        
     }
 
     .hamburguer-button {
@@ -405,8 +403,8 @@ input {
         border: 1px solid black;
         color: gray;
         background-color: white;
-        padding: 5px;
-        border-radius: 10%;
+        padding: 6.5px;
+        
     }
 
     .main-header-bottom-bar li {
@@ -444,4 +442,5 @@ input {
         margin-bottom: 100px;
     }
 }
+
 
